@@ -28,6 +28,8 @@ module.exports = function check(str, bracketsConfig) {
             stack.push(str[i]);
         }  
 
+        else return false;
+
         } 
     return stack.length === 0;
 }
